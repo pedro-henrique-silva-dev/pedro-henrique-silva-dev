@@ -86,11 +86,7 @@
 ![C#](https://img.shields.io/badge/C%23-050517?style=for-the-badge&logo=csharp&logoColor=a855f7&labelColor=0a0a2a)
 ![Java](https://img.shields.io/badge/Java-050517?style=for-the-badge&logo=openjdk&logoColor=38bdf8&labelColor=0a0a2a)
 ![Node.js](https://img.shields.io/badge/Node.js-050517?style=for-the-badge&logo=node.js&logoColor=10b981&labelColor=0a0a2a)
-![Express](https://img.shields.io/badge/Express-050517?style=for-the-badge&logo=express&logoColor=94a3b8&labelColor=0a0a2a)
-![Django](https://img.shields.io/badge/Django-050517?style=for-the-badge&logo=django&logoColor=10b981&labelColor=0a0a2a)
 ![API REST](https://img.shields.io/badge/API_REST-050517?style=for-the-badge&logo=fastapi&logoColor=38bdf8&labelColor=0a0a2a)
-![JWT](https://img.shields.io/badge/JWT-050517?style=for-the-badge&logo=jsonwebtokens&logoColor=c084fc&labelColor=0a0a2a)
-![Zod](https://img.shields.io/badge/Zod-050517?style=for-the-badge&logo=zod&logoColor=38bdf8&labelColor=0a0a2a)
 
 </div>
 
@@ -146,30 +142,6 @@
 ![Git](https://img.shields.io/badge/Git-050517?style=for-the-badge&logo=git&logoColor=f97316&labelColor=0a0a2a)
 ![GitHub](https://img.shields.io/badge/GitHub-050517?style=for-the-badge&logo=github&logoColor=e2e8f0&labelColor=0a0a2a)
 ![VS Code](https://img.shields.io/badge/VS_Code-050517?style=for-the-badge&logo=visualstudiocode&logoColor=38bdf8&labelColor=0a0a2a)
-
-</div>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--              ENGENHARIA & BOAS PRÁTICAS                     -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## `< Engenharia & Boas Práticas />`
-
-</div>
-
-<div align="center">
-
-| Pilar | Práticas & Padrões Aplicados |
-|:---|:---|
-| 🏛️ **Arquitetura de Software** | Padrão MVC, Separação de Camadas (Routes, Controllers, Services), Clean Code e princípios SOLID |
-| 🔐 **Segurança & Autenticação** | Tokens JWT com expiração, Hashing seguro de senhas (bcrypt), Middleware de autorização |
-| 🛡️ **Validação de Dados** | Validação estrita de schemas com Zod, Sanitização de inputs e tratamento centralizado de erros |
-| 🗄️ **Bancos de Dados & SQL** | Modelagem relacional, Normalização, Chaves estrangeiras, Queries otimizadas e Integridade referencial |
-| 🔄 **Controle de Versão** | Git Flow, Conventional Commits descritivos e branches organizadas por funcionalidade |
 
 </div>
 
