@@ -1,0 +1,423 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="400" viewBox="0 0 860 400">
+  <defs>
+    <!-- Neon glow filters -->
+    <filter id="neon-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neon-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050510;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#0a0a1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#050510;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="left-panel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d0d2b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a0a1a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bar-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7b2ff7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bar-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#67e8f9;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="divider-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b2ff7;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#a855f7;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#38bdf8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="corner-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c084fc;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#e879f9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1"/>
+    </linearGradient>
+    <!-- Pixel art avatar placeholder pattern -->
+    <pattern id="pixel-bg" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#0d0d2b"/>
+      <rect x="0" y="0" width="2" height="2" fill="#0f0f30" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Main background -->
+  <rect width="860" height="400" rx="12" ry="12" fill="url(#bg-grad)"/>
+  
+  <!-- Outer border with neon glow -->
+  <rect width="860" height="400" rx="12" ry="12" fill="none" stroke="#7b2ff7" stroke-width="1.5" opacity="0.9"/>
+  <rect x="1" y="1" width="858" height="398" rx="11" ry="11" fill="none" stroke="#a855f7" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Left panel background -->
+  <rect x="0" y="0" width="310" height="400" rx="12" ry="12" fill="url(#left-panel)"/>
+  <rect x="0" y="20" width="310" height="360" fill="url(#left-panel)"/>
+  
+  <!-- Corner decorations - top left -->
+  <rect x="8" y="8" width="20" height="2" fill="url(#corner-grad)" rx="1"/>
+  <rect x="8" y="8" width="2" height="20" fill="url(#corner-grad)" rx="1"/>
+  <!-- top right -->
+  <rect x="832" y="8" width="20" height="2" fill="url(#corner-grad)" rx="1"/>
+  <rect x="850" y="8" width="2" height="20" fill="url(#corner-grad)" rx="1"/>
+  <!-- bottom left -->
+  <rect x="8" y="390" width="20" height="2" fill="url(#corner-grad)" rx="1"/>
+  <rect x="8" y="372" width="2" height="20" fill="url(#corner-grad)" rx="1"/>
+  <!-- bottom right -->
+  <rect x="832" y="390" width="20" height="2" fill="url(#corner-grad)" rx="1"/>
+  <rect x="850" y="372" width="2" height="20" fill="url(#corner-grad)" rx="1"/>
+
+  <!-- Scan line effect subtle -->
+  <rect x="0" y="0" width="860" height="400" rx="12" fill="url(#pixel-bg)" opacity="0.03"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LEFT PANEL — Pixel Art Character             -->
+  <!-- ═══════════════════════════════════════════ -->
+  
+  <!-- Left panel subtle border -->
+  <rect x="0" y="0" width="310" height="400" rx="12" ry="12" fill="none" stroke="#7b2ff7" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- PIXEL ART AVATAR — Pedro Henrique (stylized pixel character) -->
+  <!-- Head -->
+  <rect x="122" y="30" width="8" height="8" fill="#c8956c"/>
+  <rect x="130" y="30" width="8" height="8" fill="#c8956c"/>
+  <rect x="138" y="30" width="8" height="8" fill="#c8956c"/>
+  <rect x="146" y="30" width="8" height="8" fill="#c8956c"/>
+  <rect x="154" y="30" width="8" height="8" fill="#c8956c"/>
+  <rect x="162" y="30" width="8" height="8" fill="#c8956c"/>
+  
+  <rect x="114" y="38" width="8" height="8" fill="#c8956c"/>
+  <rect x="122" y="38" width="8" height="8" fill="#3d2b1f"/>
+  <rect x="130" y="38" width="8" height="8" fill="#3d2b1f"/>
+  <rect x="138" y="38" width="8" height="8" fill="#c8956c"/>
+  <rect x="146" y="38" width="8" height="8" fill="#c8956c"/>
+  <rect x="154" y="38" width="8" height="8" fill="#3d2b1f"/>
+  <rect x="162" y="38" width="8" height="8" fill="#3d2b1f"/>
+  <rect x="170" y="38" width="8" height="8" fill="#c8956c"/>
+  
+  <rect x="114" y="46" width="8" height="8" fill="#c8956c"/>
+  <rect x="122" y="46" width="8" height="8" fill="#c8956c"/>
+  <rect x="130" y="46" width="8" height="8" fill="#1a1a2e"/>
+  <rect x="138" y="46" width="8" height="8" fill="#c8956c"/>
+  <rect x="146" y="46" width="8" height="8" fill="#c8956c"/>
+  <rect x="154" y="46" width="8" height="8" fill="#1a1a2e"/>
+  <rect x="162" y="46" width="8" height="8" fill="#c8956c"/>
+  <rect x="170" y="46" width="8" height="8" fill="#c8956c"/>
+  
+  <rect x="114" y="54" width="8" height="8" fill="#c8956c"/>
+  <rect x="122" y="54" width="8" height="8" fill="#c8956c"/>
+  <rect x="130" y="54" width="8" height="8" fill="#c8956c"/>
+  <rect x="138" y="54" width="8" height="8" fill="#c8956c"/>
+  <rect x="146" y="54" width="8" height="8" fill="#c8956c"/>
+  <rect x="154" y="54" width="8" height="8" fill="#c8956c"/>
+  <rect x="162" y="54" width="8" height="8" fill="#c8956c"/>
+  <rect x="170" y="54" width="8" height="8" fill="#c8956c"/>
+  
+  <rect x="114" y="62" width="8" height="8" fill="#c8956c"/>
+  <rect x="122" y="62" width="8" height="8" fill="#c8956c"/>
+  <rect x="130" y="62" width="8" height="8" fill="#b07d58"/><!-- nose -->
+  <rect x="138" y="62" width="8" height="8" fill="#c8956c"/>
+  <rect x="146" y="62" width="8" height="8" fill="#c8956c"/>
+  <rect x="154" y="62" width="8" height="8" fill="#b07d58"/>
+  <rect x="162" y="62" width="8" height="8" fill="#c8956c"/>
+  <rect x="170" y="62" width="8" height="8" fill="#c8956c"/>
+  
+  <rect x="114" y="70" width="8" height="8" fill="#c8956c"/>
+  <rect x="122" y="70" width="8" height="8" fill="#c8956c"/>
+  <rect x="130" y="70" width="8" height="8" fill="#c8956c"/>
+  <rect x="138" y="70" width="8" height="8" fill="#8b5e3c"/><!-- mouth -->
+  <rect x="146" y="70" width="8" height="8" fill="#8b5e3c"/>
+  <rect x="154" y="70" width="8" height="8" fill="#8b5e3c"/>
+  <rect x="162" y="70" width="8" height="8" fill="#c8956c"/>
+  <rect x="170" y="70" width="8" height="8" fill="#c8956c"/>
+  
+  <rect x="122" y="78" width="8" height="8" fill="#c8956c"/>
+  <rect x="130" y="78" width="8" height="8" fill="#c8956c"/>
+  <rect x="138" y="78" width="8" height="8" fill="#c8956c"/>
+  <rect x="146" y="78" width="8" height="8" fill="#c8956c"/>
+  <rect x="154" y="78" width="8" height="8" fill="#c8956c"/>
+  <rect x="162" y="78" width="8" height="8" fill="#c8956c"/>
+
+  <!-- Hair (dark brown/black) -->
+  <rect x="122" y="22" width="8" height="8" fill="#2d1b0e"/>
+  <rect x="130" y="22" width="8" height="8" fill="#2d1b0e"/>
+  <rect x="138" y="22" width="8" height="8" fill="#2d1b0e"/>
+  <rect x="146" y="22" width="8" height="8" fill="#2d1b0e"/>
+  <rect x="154" y="22" width="8" height="8" fill="#2d1b0e"/>
+  <rect x="162" y="22" width="8" height="8" fill="#2d1b0e"/>
+  <rect x="114" y="30" width="8" height="8" fill="#2d1b0e"/>
+  <rect x="170" y="30" width="8" height="8" fill="#2d1b0e"/>
+
+  <!-- Neck -->
+  <rect x="138" y="86" width="8" height="8" fill="#c8956c"/>
+  <rect x="146" y="86" width="8" height="8" fill="#c8956c"/>
+  
+  <!-- Body - dark hoodie/jacket with purple accents -->
+  <rect x="114" y="94" width="8" height="8" fill="#7b2ff7"/><!-- shoulder -->
+  <rect x="122" y="94" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="130" y="94" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="138" y="94" width="8" height="8" fill="#c8956c"/><!-- neck -->
+  <rect x="146" y="94" width="8" height="8" fill="#c8956c"/>
+  <rect x="154" y="94" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="162" y="94" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="170" y="94" width="8" height="8" fill="#7b2ff7"/>
+
+  <rect x="106" y="102" width="8" height="8" fill="#7b2ff7"/>
+  <rect x="114" y="102" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="122" y="102" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="130" y="102" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="138" y="102" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="146" y="102" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="154" y="102" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="162" y="102" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="170" y="102" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="178" y="102" width="8" height="8" fill="#7b2ff7"/>
+
+  <rect x="106" y="110" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="114" y="110" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="122" y="110" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="130" y="110" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="138" y="110" width="8" height="8" fill="#7b2ff7"/><!-- logo -->
+  <rect x="146" y="110" width="8" height="8" fill="#7b2ff7"/>
+  <rect x="154" y="110" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="162" y="110" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="170" y="110" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="178" y="110" width="8" height="8" fill="#1a1a3e"/>
+
+  <rect x="106" y="118" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="114" y="118" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="122" y="118" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="130" y="118" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="138" y="118" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="146" y="118" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="154" y="118" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="162" y="118" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="170" y="118" width="8" height="8" fill="#1a1a3e"/>
+  <rect x="178" y="118" width="8" height="8" fill="#1a1a3e"/>
+
+  <!-- Arms -->
+  <rect x="98" y="102" width="8" height="8" fill="#c8956c"/><!-- left arm -->
+  <rect x="186" y="102" width="8" height="8" fill="#c8956c"/><!-- right arm -->
+  <rect x="98" y="110" width="8" height="8" fill="#c8956c"/>
+  <rect x="186" y="110" width="8" height="8" fill="#c8956c"/>
+  <rect x="98" y="118" width="8" height="8" fill="#c8956c"/>
+  <rect x="186" y="118" width="8" height="8" fill="#c8956c"/>
+
+  <!-- Character glow effect around avatar -->
+  <rect x="90" y="14" width="116" height="128" rx="4" fill="none" stroke="#7b2ff7" stroke-width="1" opacity="0.4"/>
+
+  <!-- AVATAR LABEL -->
+  <text x="148" y="162" font-family="monospace" font-size="8" fill="#a855f7" text-anchor="middle" letter-spacing="2">[ PIXEL.DEV ]</text>
+
+  <!-- Neon horizontal line under avatar -->
+  <rect x="20" y="170" width="270" height="1" fill="url(#divider-grad)" rx="1"/>
+
+  <!-- PLAYER BADGE -->
+  <rect x="20" y="178" width="270" height="22" rx="3" fill="#0d0d2b" stroke="#7b2ff7" stroke-width="0.8"/>
+  <text x="155" y="193" font-family="monospace" font-size="9" fill="#a855f7" text-anchor="middle" letter-spacing="3">◆  SOFTWARE DEVELOPER  ◆</text>
+
+  <!-- ATTRIBUTES SECTION -->
+  <text x="20" y="220" font-family="monospace" font-size="8" fill="#38bdf8" letter-spacing="2">▸ SKILLS</text>
+  
+  <!-- Attribute bars -->
+  <!-- BACK-END -->
+  <text x="20" y="237" font-family="monospace" font-size="7.5" fill="#c084fc">BACK-END</text>
+  <rect x="90" y="228" width="200" height="8" rx="2" fill="#1a1a3e"/>
+  <rect x="90" y="228" width="185" height="8" rx="2" fill="url(#bar-purple)"/>
+  <text x="295" y="236" font-family="monospace" font-size="7" fill="#a855f7" text-anchor="end">★★★★★</text>
+  
+  <!-- PYTHON -->
+  <text x="20" y="252" font-family="monospace" font-size="7.5" fill="#c084fc">PYTHON</text>
+  <rect x="90" y="243" width="200" height="8" rx="2" fill="#1a1a3e"/>
+  <rect x="90" y="243" width="175" height="8" rx="2" fill="url(#bar-blue)"/>
+  <text x="295" y="251" font-family="monospace" font-size="7" fill="#38bdf8" text-anchor="end">★★★★☆</text>
+  
+  <!-- DATABASE -->
+  <text x="20" y="267" font-family="monospace" font-size="7.5" fill="#c084fc">DATABASE</text>
+  <rect x="90" y="258" width="200" height="8" rx="2" fill="#1a1a3e"/>
+  <rect x="90" y="258" width="170" height="8" rx="2" fill="url(#bar-cyan)"/>
+  <text x="295" y="266" font-family="monospace" font-size="7" fill="#06b6d4" text-anchor="end">★★★★☆</text>
+  
+  <!-- DATA ANALYTICS -->
+  <text x="20" y="282" font-family="monospace" font-size="7.5" fill="#c084fc">ANALYTICS</text>
+  <rect x="90" y="273" width="200" height="8" rx="2" fill="#1a1a3e"/>
+  <rect x="90" y="273" width="160" height="8" rx="2" fill="url(#bar-purple)"/>
+  <text x="295" y="281" font-family="monospace" font-size="7" fill="#a855f7" text-anchor="end">★★★☆☆</text>
+  
+  <!-- FULL STACK -->
+  <text x="20" y="297" font-family="monospace" font-size="7.5" fill="#c084fc">FULL STACK</text>
+  <rect x="90" y="288" width="200" height="8" rx="2" fill="#1a1a3e"/>
+  <rect x="90" y="288" width="150" height="8" rx="2" fill="url(#bar-blue)"/>
+  <text x="295" y="296" font-family="monospace" font-size="7" fill="#38bdf8" text-anchor="end">★★★☆☆</text>
+
+  <!-- Character traits -->
+  <rect x="20" y="310" width="270" height="1" fill="#7b2ff7" opacity="0.4"/>
+  <text x="20" y="325" font-family="monospace" font-size="7" fill="#38bdf8" letter-spacing="2">▸ TRAITS</text>
+  
+  <text x="20" y="340" font-family="monospace" font-size="7" fill="#e2e8f0">◈ BACK-END ENTHUSIAST</text>
+  <text x="20" y="352" font-family="monospace" font-size="7" fill="#e2e8f0">◈ DATABASE ENTHUSIAST</text>
+  <text x="20" y="364" font-family="monospace" font-size="7" fill="#e2e8f0">◈ DATA-DRIVEN MINDSET</text>
+  <text x="155" y="340" font-family="monospace" font-size="7" fill="#e2e8f0">◈ PROBLEM SOLVER</text>
+  <text x="155" y="352" font-family="monospace" font-size="7" fill="#e2e8f0">◈ ALWAYS LEARNING</text>
+  <text x="155" y="364" font-family="monospace" font-size="7" fill="#e2e8f0">◈ CLEAN CODE</text>
+
+  <!-- Bottom status bar left panel -->
+  <rect x="20" y="380" width="270" height="12" rx="2" fill="#0a0a1a" stroke="#7b2ff7" stroke-width="0.5"/>
+  <rect x="22" y="382" width="40" height="8" rx="1" fill="#7b2ff7" opacity="0.8"/>
+  <text x="43" y="389" font-family="monospace" font-size="6" fill="#fff" text-anchor="middle">ONLINE</text>
+  <text x="155" y="389" font-family="monospace" font-size="6" fill="#64748b" text-anchor="middle">STATUS: OPEN TO WORK</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- VERTICAL DIVIDER                            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="318" y="20" width="2" height="360" fill="url(#divider-grad)" rx="1"/>
+  <!-- Neon dot on divider -->
+  <circle cx="319" cy="20" r="3" fill="#a855f7" filter="url(#glow-strong)"/>
+  <circle cx="319" cy="200" r="3" fill="#38bdf8" filter="url(#glow-strong)"/>
+  <circle cx="319" cy="380" r="3" fill="#a855f7" filter="url(#glow-strong)"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- RIGHT PANEL — Info & Presentation           -->
+  <!-- ═══════════════════════════════════════════ -->
+  
+  <!-- Decorative circuit lines top right -->
+  <line x1="340" y1="30" x2="420" y2="30" stroke="#7b2ff7" stroke-width="0.5" opacity="0.4"/>
+  <line x1="420" y1="30" x2="420" y2="45" stroke="#7b2ff7" stroke-width="0.5" opacity="0.4"/>
+  <circle cx="340" cy="30" r="2" fill="#7b2ff7" opacity="0.6"/>
+  <circle cx="420" cy="45" r="2" fill="#38bdf8" opacity="0.6"/>
+  
+  <line x1="750" y1="30" x2="840" y2="30" stroke="#38bdf8" stroke-width="0.5" opacity="0.4"/>
+  <line x1="750" y1="30" x2="750" y2="45" stroke="#38bdf8" stroke-width="0.5" opacity="0.4"/>
+  <circle cx="840" cy="30" r="2" fill="#38bdf8" opacity="0.6"/>
+
+  <!-- ROLE BADGE -->
+  <rect x="335" y="20" width="120" height="18" rx="9" fill="#7b2ff7" opacity="0.15" stroke="#7b2ff7" stroke-width="0.8"/>
+  <text x="395" y="32" font-family="monospace" font-size="8" fill="#a855f7" text-anchor="middle" letter-spacing="2">&lt; DEVELOPER /&gt;</text>
+
+  <!-- MAIN NAME -->
+  <text x="335" y="78" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="url(#title-grad)" filter="url(#neon-purple)" letter-spacing="1">PEDRO</text>
+  <text x="335" y="112" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="url(#title-grad)" filter="url(#neon-purple)" letter-spacing="1">HENRIQUE</text>
+
+  <!-- Subtitle -->
+  <text x="335" y="134" font-family="monospace" font-size="11" fill="#94a3b8" letter-spacing="3">PEREIRA DA SILVA</text>
+  
+  <!-- Neon underline name -->
+  <rect x="335" y="140" width="380" height="1.5" fill="url(#divider-grad)" rx="1"/>
+
+  <!-- Role tags -->
+  <rect x="335" y="150" width="90" height="20" rx="10" fill="#7b2ff7" opacity="0.2" stroke="#a855f7" stroke-width="0.8"/>
+  <text x="380" y="164" font-family="monospace" font-size="8" fill="#c084fc" text-anchor="middle">BACK-END</text>
+  
+  <rect x="433" y="150" width="90" height="20" rx="10" fill="#2563eb" opacity="0.2" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="478" y="164" font-family="monospace" font-size="8" fill="#38bdf8" text-anchor="middle">FULL STACK</text>
+  
+  <rect x="531" y="150" width="60" height="20" rx="10" fill="#06b6d4" opacity="0.2" stroke="#06b6d4" stroke-width="0.8"/>
+  <text x="561" y="164" font-family="monospace" font-size="8" fill="#67e8f9" text-anchor="middle">DADOS</text>
+
+  <!-- Main tagline -->
+  <text x="335" y="200" font-family="monospace" font-size="11" fill="#e2e8f0" letter-spacing="0.5">❝ Transformando ideias em soluções</text>
+  <text x="335" y="216" font-family="monospace" font-size="11" fill="#e2e8f0" letter-spacing="0.5">  através da tecnologia. ❞</text>
+
+  <!-- Tech Stack Preview -->
+  <text x="335" y="244" font-family="monospace" font-size="8" fill="#38bdf8" letter-spacing="3">▸ TECH STACK</text>
+  <rect x="335" y="248" width="230" height="1" fill="#38bdf8" opacity="0.3"/>
+
+  <!-- Tech tags row 1 -->
+  <rect x="335" y="256" width="52" height="18" rx="3" fill="#1a1a3e" stroke="#7b2ff7" stroke-width="0.6"/>
+  <text x="361" y="268" font-family="monospace" font-size="7.5" fill="#c084fc" text-anchor="middle">Python</text>
+  
+  <rect x="393" y="256" width="38" height="18" rx="3" fill="#1a1a3e" stroke="#38bdf8" stroke-width="0.6"/>
+  <text x="412" y="268" font-family="monospace" font-size="7.5" fill="#38bdf8" text-anchor="middle">C#</text>
+  
+  <rect x="437" y="256" width="40" height="18" rx="3" fill="#1a1a3e" stroke="#38bdf8" stroke-width="0.6"/>
+  <text x="457" y="268" font-family="monospace" font-size="7.5" fill="#38bdf8" text-anchor="middle">Java</text>
+  
+  <rect x="483" y="256" width="52" height="18" rx="3" fill="#1a1a3e" stroke="#06b6d4" stroke-width="0.6"/>
+  <text x="509" y="268" font-family="monospace" font-size="7.5" fill="#67e8f9" text-anchor="middle">Node.js</text>
+  
+  <rect x="541" y="256" width="52" height="18" rx="3" fill="#1a1a3e" stroke="#7b2ff7" stroke-width="0.6"/>
+  <text x="567" y="268" font-family="monospace" font-size="7.5" fill="#c084fc" text-anchor="middle">Django</text>
+
+  <!-- Tech tags row 2 -->
+  <rect x="335" y="280" width="58" height="18" rx="3" fill="#1a1a3e" stroke="#38bdf8" stroke-width="0.6"/>
+  <text x="364" y="292" font-family="monospace" font-size="7.5" fill="#38bdf8" text-anchor="middle">React</text>
+  
+  <rect x="399" y="280" width="58" height="18" rx="3" fill="#1a1a3e" stroke="#7b2ff7" stroke-width="0.6"/>
+  <text x="428" y="292" font-family="monospace" font-size="7.5" fill="#c084fc" text-anchor="middle">PostgreSQL</text>
+  
+  <rect x="463" y="280" width="40" height="18" rx="3" fill="#1a1a3e" stroke="#06b6d4" stroke-width="0.6"/>
+  <text x="483" y="292" font-family="monospace" font-size="7.5" fill="#67e8f9" text-anchor="middle">SQL</text>
+  
+  <rect x="509" y="280" width="52" height="18" rx="3" fill="#1a1a3e" stroke="#38bdf8" stroke-width="0.6"/>
+  <text x="535" y="292" font-family="monospace" font-size="7.5" fill="#38bdf8" text-anchor="middle">Power BI</text>
+  
+  <rect x="567" y="280" width="34" height="18" rx="3" fill="#1a1a3e" stroke="#7b2ff7" stroke-width="0.6"/>
+  <text x="584" y="292" font-family="monospace" font-size="7.5" fill="#c084fc" text-anchor="middle">Git</text>
+
+  <!-- GITHUB LINK at bottom right -->
+  <rect x="335" y="318" width="460" height="1" fill="#7b2ff7" opacity="0.3"/>
+  
+  <!-- Social links area -->
+  <text x="335" y="340" font-family="monospace" font-size="8" fill="#38bdf8" letter-spacing="3">▸ CONNECT</text>
+  
+  <!-- GitHub link -->
+  <rect x="335" y="348" width="175" height="20" rx="10" fill="#0d0d2b" stroke="#7b2ff7" stroke-width="0.8"/>
+  <text x="422" y="362" font-family="monospace" font-size="8" fill="#a855f7" text-anchor="middle">⌥ github.com/pedro-henrique-silva-dev</text>
+  
+  <!-- LinkedIn link -->
+  <rect x="516" y="348" width="175" height="20" rx="10" fill="#0d0d2b" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="603" y="362" font-family="monospace" font-size="8" fill="#38bdf8" text-anchor="middle">in linkedin.com/in/pedrohenriqueps-</text>
+
+  <!-- Bottom bar right panel -->
+  <rect x="335" y="378" width="500" height="14" rx="2" fill="#0a0a1a" stroke="#38bdf8" stroke-width="0.3" opacity="0.5"/>
+  <text x="590" y="388" font-family="monospace" font-size="6" fill="#475569" text-anchor="middle">Desenvolvedor de Software  ·  Back-End | Full Stack | Dados  ·  Brasil 🇧🇷</text>
+
+  <!-- Decorative elements: floating pixels -->
+  <rect x="600" y="58" width="4" height="4" fill="#7b2ff7" opacity="0.5"/>
+  <rect x="612" y="66" width="4" height="4" fill="#38bdf8" opacity="0.4"/>
+  <rect x="626" y="52" width="4" height="4" fill="#a855f7" opacity="0.6"/>
+  <rect x="640" y="72" width="4" height="4" fill="#06b6d4" opacity="0.3"/>
+  <rect x="654" y="58" width="4" height="4" fill="#7b2ff7" opacity="0.5"/>
+  <rect x="668" y="64" width="4" height="4" fill="#38bdf8" opacity="0.4"/>
+  <rect x="682" y="50" width="4" height="4" fill="#a855f7" opacity="0.5"/>
+  <rect x="696" y="68" width="4" height="4" fill="#06b6d4" opacity="0.4"/>
+  <rect x="710" y="56" width="4" height="4" fill="#7b2ff7" opacity="0.3"/>
+  <rect x="724" y="74" width="4" height="4" fill="#38bdf8" opacity="0.5"/>
+  <rect x="738" y="60" width="4" height="4" fill="#a855f7" opacity="0.4"/>
+  <rect x="752" y="48" width="4" height="4" fill="#7b2ff7" opacity="0.6"/>
+  <rect x="766" y="66" width="4" height="4" fill="#38bdf8" opacity="0.3"/>
+  <rect x="780" y="54" width="4" height="4" fill="#06b6d4" opacity="0.5"/>
+  <rect x="794" y="70" width="4" height="4" fill="#a855f7" opacity="0.4"/>
+  <rect x="808" y="58" width="4" height="4" fill="#7b2ff7" opacity="0.5"/>
+  <rect x="822" y="52" width="4" height="4" fill="#38bdf8" opacity="0.4"/>
+  <rect x="836" y="68" width="4" height="4" fill="#a855f7" opacity="0.3"/>
+
+  <!-- Scanline horizontal subtle effect right panel -->
+  <rect x="320" y="0" width="540" height="400" rx="12" fill="none" stroke="none"/>
+  
+  <!-- Version tag -->
+  <text x="845" y="395" font-family="monospace" font-size="5" fill="#334155" text-anchor="end">v2.0.26</text>
+</svg>
