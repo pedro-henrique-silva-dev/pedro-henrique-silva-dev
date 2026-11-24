@@ -48,7 +48,7 @@
 | 🔭 Foco atual | Desenvolvimento Back-End e Full Stack |
 |---|---|
 | 💡 Interesse | APIs, Bancos de Dados, Automação, Data Analytics |
-| 🚀 Objetivo | Vaga de Dev Back-End Jr, Full Stack Jr ou Analista de TI |
+| 🚀 Objetivo | Vaga de Dev Back-End Jr, Full Stack Jr ou Analista de Dados |
 | 🌍 Localização | Brasil 🇧🇷 |
 | 📧 Contato | pedro7685786@gmail.com |
 
