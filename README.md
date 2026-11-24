@@ -4,7 +4,17 @@
 <!--           PIXEL ART PROFILE CARD — MAIN HEADER            -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-<img src="assets/profile-card.png" alt="Pedro Henrique — Profile Card" width="900"/>
+<img src="assets/profile-card.png" alt="Pedro Henrique — Profile Card" width="920"/>
+
+<br/><br/>
+
+<a href="https://linkedin.com/in/pedrohenriqueps-" target="_blank"><img src="assets/social/btn-linkedin.svg" height="46" alt="LinkedIn"/></a>
+&nbsp;&nbsp;
+<a href="https://instagram.com/henriique.dev" target="_blank"><img src="assets/social/btn-instagram.svg" height="46" alt="Instagram"/></a>
+&nbsp;&nbsp;
+<a href="https://github.com/pedro-henrique-silva-dev" target="_blank"><img src="assets/social/btn-github.svg" height="46" alt="GitHub"/></a>
+&nbsp;&nbsp;
+<a href="mailto:henriique.dev7@gmail.com"><img src="assets/social/btn-email.svg" height="46" alt="Email"/></a>
 
 </div>
 
@@ -259,10 +269,13 @@ Aplicação web desenvolvida para organização e gerenciamento de tarefas, com 
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-050517?style=for-the-badge&logo=github&logoColor=white&labelColor=7b2ff7)](https://github.com/pedro-henrique-silva-dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-050517?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=2563eb)](https://linkedin.com/in/pedrohenriqueps-)
-[![Instagram](https://img.shields.io/badge/Instagram-050517?style=for-the-badge&logo=instagram&logoColor=white&labelColor=e1306c)](https://instagram.com/henriique.dev)
-[![E-mail](https://img.shields.io/badge/E--mail-050517?style=for-the-badge&logo=gmail&logoColor=white&labelColor=dc2626)](mailto:henriique.dev7@gmail.com)
+<a href="https://linkedin.com/in/pedrohenriqueps-" target="_blank"><img src="assets/social/btn-linkedin.svg" height="46" alt="LinkedIn"/></a>
+&nbsp;&nbsp;
+<a href="https://instagram.com/henriique.dev" target="_blank"><img src="assets/social/btn-instagram.svg" height="46" alt="Instagram"/></a>
+&nbsp;&nbsp;
+<a href="https://github.com/pedro-henrique-silva-dev" target="_blank"><img src="assets/social/btn-github.svg" height="46" alt="GitHub"/></a>
+&nbsp;&nbsp;
+<a href="mailto:henriique.dev7@gmail.com"><img src="assets/social/btn-email.svg" height="46" alt="Email"/></a>
 
 </div>
 
