@@ -152,6 +152,30 @@
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
+<!--              ENGENHARIA & BOAS PRÁTICAS                     -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+## `< Engenharia & Boas Práticas />`
+
+</div>
+
+<div align="center">
+
+| Pilar | Práticas & Padrões Aplicados |
+|:---|:---|
+| 🏛️ **Arquitetura de Software** | Padrão MVC, Separação de Camadas (Routes, Controllers, Services), Clean Code e princípios SOLID |
+| 🔐 **Segurança & Autenticação** | Tokens JWT com expiração, Hashing seguro de senhas (bcrypt), Middleware de autorização |
+| 🛡️ **Validação de Dados** | Validação estrita de schemas com Zod, Sanitização de inputs e tratamento centralizado de erros |
+| 🗄️ **Bancos de Dados & SQL** | Modelagem relacional, Normalização, Chaves estrangeiras, Queries otimizadas e Integridade referencial |
+| 🔄 **Controle de Versão** | Git Flow, Conventional Commits descritivos e branches organizadas por funcionalidade |
+
+</div>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
 <!--                PROJETOS EM DESTAQUE                        -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
