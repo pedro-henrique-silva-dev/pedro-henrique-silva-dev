@@ -37,7 +37,7 @@
 
 ```
   Sou profissional de TI com experiência em desenvolvimento back-end,
-  arquitetura de dados, suporte técnico e infraestrutura.
+  front-end e arquitetura de dados.
   
   Tenho experiência prática na construção e integração de APIs,
   automação de processos em Python, gerenciamento de bancos de dados
