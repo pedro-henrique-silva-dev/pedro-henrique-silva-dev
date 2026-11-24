@@ -261,7 +261,8 @@ Aplicação web desenvolvida para organização e gerenciamento de tarefas, com 
 
 [![GitHub](https://img.shields.io/badge/GitHub-050517?style=for-the-badge&logo=github&logoColor=white&labelColor=7b2ff7)](https://github.com/pedro-henrique-silva-dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-050517?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=2563eb)](https://linkedin.com/in/pedrohenriqueps-)
-[![E-mail](https://img.shields.io/badge/E--mail-050517?style=for-the-badge&logo=gmail&logoColor=white&labelColor=dc2626)](mailto:pedro7685786@gmail.com)
+[![Instagram](https://img.shields.io/badge/Instagram-050517?style=for-the-badge&logo=instagram&logoColor=white&labelColor=e1306c)](https://instagram.com/henriique.dev)
+[![E-mail](https://img.shields.io/badge/E--mail-050517?style=for-the-badge&logo=gmail&logoColor=white&labelColor=dc2626)](mailto:henriique.dev7@gmail.com)
 
 </div>
 
