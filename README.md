@@ -4,7 +4,7 @@
 <!--           PIXEL ART PROFILE CARD — MAIN HEADER            -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-<img src="assets/profile-card.svg" alt="Pedro Henrique — Profile Card" width="860"/>
+<img src="assets/profile-card.png" alt="Pedro Henrique — Profile Card" width="900"/>
 
 </div>
 
@@ -50,7 +50,7 @@
 | 💡 Interesse | APIs, Bancos de Dados, Automação, Data Analytics |
 | 🚀 Objetivo | Vaga de Dev Back-End Jr, Full Stack Jr ou Analista de Dados |
 | 🌍 Localização | Brasil 🇧🇷 |
-| 📧 Contato | pedro7685786@gmail.com |
+| 📧 Contato | henriique.dev7@gmail.com |
 
 </div>
 
@@ -235,7 +235,7 @@ Aplicação web desenvolvida para organização e gerenciamento de tarefas, com 
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=pedro-henrique-silva-dev&theme=tokyonight&background=050517&ring=a855f7&fire=38bdf8&currStreakLabel=c084fc&sideLabels=94a3b8&dates=64748b&border=7b2ff7" alt="Pedro Henrique GitHub Streak"/>
+<img src="https://streak-stats.demolab.com/?user=pedro-henrique-silva-dev&theme=tokyonight&background=050517&ring=a855f7&fire=38bdf8&currStreakLabel=c084fc&sideLabels=94a3b8&dates=64748b&border=7b2ff7" alt="Pedro Henrique GitHub Streak"/>
 
 </div>
 
